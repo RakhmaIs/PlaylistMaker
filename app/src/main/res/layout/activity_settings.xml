@@ -39,6 +39,7 @@
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/black_theme"
+        android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="start|center_vertical"
@@ -48,10 +49,7 @@
         android:fontFamily="@font/ys_display"
         android:gravity="start|center_vertical"
         android:text="@string/switch_to_black"
-        android:textSize="16sp"
-
-
-        >
+        android:textSize="16sp">
 
     </androidx.appcompat.widget.SwitchCompat>
 
