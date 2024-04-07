@@ -13,17 +13,17 @@
 
         <TextView
             android:id="@+id/settings_textview"
-            style="@style/top_textview_style"
+            style="@style/TopTextViewStyle"
             android:text="@string/setting_sec_act" />
 
         <Button
             android:id="@+id/back_arrow_settings"
-            style="@style/back_arrow_button_style" />
+            style="@style/BackArrowButtonStyle" />
     </FrameLayout>
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/black_theme"
-        style="@style/settings_button_style"
+        style="@style/SettingsActButtonStyle"
         android:layout_marginStart="@dimen/asset_button"
         android:layout_marginTop="45dp"
         android:layout_marginEnd="@dimen/icon_pad"
@@ -35,19 +35,19 @@
 
     <Button
         android:id="@+id/share_button"
-        style="@style/settings_button_style"
+        style="@style/SettingsActButtonStyle"
         android:text="@string/share_app"
         app:icon="@drawable/share" />
 
     <Button
         android:id="@+id/write_to_support"
-        style="@style/settings_button_style"
+        style="@style/SettingsActButtonStyle"
         android:text="@string/support"
         app:icon="@drawable/support" />
 
     <Button
         android:id="@+id/term_of_use"
-        style="@style/settings_button_style"
+        style="@style/SettingsActButtonStyle"
         android:text="@string/term_of_use"
         app:icon="@drawable/arrow" />
 </LinearLayout>

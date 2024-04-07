@@ -13,12 +13,12 @@
 
         <TextView
             android:id="@+id/search_textview"
-            style="@style/top_textview_style"
+            style="@style/TopTextViewStyle"
             android:text="@string/search" />
 
         <Button
             android:id="@+id/back_arrow_search"
-            style="@style/back_arrow_button_style" />
+            style="@style/BackArrowButtonStyle" />
     </FrameLayout>
 
     <FrameLayout
@@ -30,13 +30,15 @@
         android:backgroundTint="@color/gray_light">
 
         <ImageView
+            android:id="@+id/search_lay_magnifying_glass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="start||center_vertical"
+            android:layout_gravity="center_vertical"
             android:layout_marginStart="15.12dp"
             android:src="@drawable/search_icon" />
 
         <EditText
+            android:id="@+id/search_lay_search_bar_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -45,6 +47,16 @@
             android:hint="@string/search"
             android:inputType="text"
             android:lines="1" />
+
+        <ImageView
+            android:id="@+id/search_lay_clear_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:visibility="gone"
+            />
+
 
 
     </FrameLayout>
