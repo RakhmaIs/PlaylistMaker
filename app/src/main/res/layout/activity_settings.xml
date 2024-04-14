@@ -6,46 +6,37 @@
     android:orientation="vertical"
     android:theme="@style/DayNightBackgroundStyle">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/settings_textview"
-            style="@style/DayNightTopTextViewStyle"
-            android:text="@string/setting_sec_act" />
-
-        <Button
-            android:id="@+id/back_arrow_settings"
-            style="@style/DayNightBackArrowButtonStyle" />
-    </FrameLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/settings_lay_toolbar"
+        style="@style/ToolBarStyleWithIconStyle"
+        app:title="@string/settings" />
 
     <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/black_theme"
+        android:id="@+id/settings_lay_black_theme"
         style="@style/DayNightSettingsActButtonStyle"
         android:layout_marginStart="@dimen/asset_button"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="@dimen/icon_pad"
         android:text="@string/switch_to_black"
         android:textSize="16sp">
 
     </androidx.appcompat.widget.SwitchCompat>
 
-
     <Button
-        android:id="@+id/share_button"
+        android:id="@+id/settings_lay_share_button"
         style="@style/DayNightSettingsActButtonStyle"
         android:text="@string/share_app"
         app:icon="@drawable/share" />
 
     <Button
-        android:id="@+id/write_to_support"
+        android:id="@+id/settings_lay_write_to_support"
         style="@style/DayNightSettingsActButtonStyle"
         android:text="@string/support"
         app:icon="@drawable/support" />
 
     <Button
-        android:id="@+id/term_of_use"
+        android:id="@+id/settings_lay_term_of_use"
         style="@style/DayNightSettingsActButtonStyle"
         android:text="@string/term_of_use"
         app:icon="@drawable/arrow" />

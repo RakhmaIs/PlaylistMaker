@@ -1,18 +1,22 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.PlaylistMaker" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- Primary brand color. -->
         <item name="android:background">@color/blue</item>
 
+
     </style>
 
     <style name="DayNightBackgroundStyle">
         <item name="background">@color/white</item>
+        <item name="iconColor">@color/black</item>
     </style>
 
     <style name="DayNightSettingsActButtonStyle" parent="@style/SettingsActButtonStyle">
         <item name="android:textColor">@color/black</item>
+
+
     </style>
 
     <style name="DayNightTopTextViewStyle" parent="@style/TopTextViewStyle">
@@ -28,10 +32,9 @@
         <item name="backgroundTint">@color/gray_light</item>
     </style>
 
-    <style name="DayNightMagnifyingGlassImageView">
-        <item name="android:tint">@color/gray_dark</item>
+    <style name="DayNightEditTextHintAndIconStyle">
+        <item name="android:drawableTint">@color/gray_dark</item>
+        <item name="android:textColorHint">@color/gray_dark</item>
     </style>
-
-
 
 </resources>

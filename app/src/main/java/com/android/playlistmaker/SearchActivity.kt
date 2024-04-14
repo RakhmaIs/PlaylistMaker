@@ -7,7 +7,6 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
 import android.view.inputmethod.InputMethodManager
-import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
@@ -21,7 +20,7 @@ class SearchActivity : AppCompatActivity() {
         setContentView(R.layout.activity_search)
 
 
-        val backArrowButton = findViewById<Button>(R.id.search_lay_back_arrow)
+        val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.search_lay_toolbar)
         val clearIcon = findViewById<ImageView>(R.id.search_lay_clear_icon)
         val searchBar = findViewById<EditText>(R.id.search_lay_search_bar_edit_text)
 
@@ -29,7 +28,7 @@ class SearchActivity : AppCompatActivity() {
             searchBar.setText(text)
         }
 
-        backArrowButton.setOnClickListener {
+        toolbar.setNavigationOnClickListener {
             val backArrowIntent = Intent(this, MainActivity::class.java)
             startActivity(backArrowIntent)
         }
