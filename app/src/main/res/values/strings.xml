@@ -14,4 +14,9 @@
     <string name="switch_to_black" translatable="false">Темная тема</string>
     <string name="support" translatable="false">Написать в поддержку</string>
     <string name="term_of_use" translatable="false">Пользовательское соглашение</string>
+    <string name="email_content" translatable="false">"Спасибо разработчикам и разработчицам за крутое приложение!"</string>
+    <string name="email_subject" translatable="false">"Сообщение разработчикам и разработчицам приложения Playlist Maker"</string>
+    <string name="email_send_to_address" translatable="false">"bigshomas@yandex.ru"</string>
+    <string name="practicum_developer_url" translatable="false">"https://practicum.yandex.ru/profile/android-developer/"</string>
+    <string name="yandex_offer_url" translatable="false">"https://yandex.ru/legal/practicum_offer/"</string>
 </resources>
